@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Contact — Ryan ATROUN</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="description" content="Me contacter pour projets, alternance ou collaborations musique.">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div id="vignette" aria-hidden="true"></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Ryan ATROUN</span>
+      </a>
+      <nav aria-label="Navigation principale">
+        <a href="projects.html">Projets</a>
+        <a href="about.html">À propos</a>
+        <a href="music.html">Musique</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="https://github.com/" target="_blank" rel="noreferrer noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section id="contact">
+      <div class="section-title"><span class="dot"></span><h2>Contact</h2></div>
+      <p class="lead reveal">📧 <a href="mailto:contact@exemple.com">contact@exemple.com</a> · LinkedIn : <a href="#" target="_blank" rel="noopener">ajoute ton lien</a></p>
+      <form class="reveal" onsubmit="event.preventDefault(); alert('Merci ! Message simulé côté client.');">
+        <label><span>Nom</span><input required placeholder="Votre nom" /></label>
+        <label><span>Email</span><input type="email" required placeholder="vous@exemple.com" /></label>
+        <label><span>Message</span><textarea required placeholder="Votre message..."></textarea></label>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+  <footer class="container">
+    © <span id="year"></span> — Ryan ATROUN. Tous droits réservés.
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/starfield.js"></script>
+</body>
+</html>

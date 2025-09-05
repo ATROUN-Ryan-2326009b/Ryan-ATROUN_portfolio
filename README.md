@@ -1,14 +1,25 @@
-# Portfolio futuriste (HTML/CSS/JS)
+# Portfolio — Ryan ATROUN
+Site statique multi-pages (fond étoilé animé, cartes avec surbrillance/tilt, animations douces).
 
-Ce dépôt contient un portfolio statique (fond étoilé animé, cartes avec surbrillance/tilt, animations douces).
+## Structure
+- `index.html` — page d'accueil
+- `projects.html` — projets
+- `about.html` — à propos / compétences
+- `music.html` — musique (mixage/mastering + album)
+- `contact.html` — contact
+- `css/style.css` — styles
+- `js/main.js` — effets (tilt, reveal, année)
+- `js/starfield.js` — fond d'étoiles + étoiles filantes
 
-## Déploiement sur GitHub Pages (automatique avec GitHub Actions)
-1. Crée un nouveau dépôt GitHub **public** et pousse les fichiers.
-2. Vérifie l’onglet **Actions** : le workflow `Deploy static site to Pages` s’exécute.
-3. Va dans **Settings → Pages** : le site sera disponible via l’URL affichée.
+## Modifier le contenu
+Édite directement les pages `.html` :
+- Nom/accroche : `index.html` (section hero)
+- Projets : `projects.html` (duplique un `<article class="card">`)
+- Compétences & alternance : `about.html`
+- Lien de l'album : `music.html` (remplace `#` par ton URL Spotify/Apple)
+- Email & LinkedIn : `contact.html`
 
-## Personnalisation
-- Modifie les textes, projets et liens dans `index.html`.
-- Pour un domaine custom : **Settings → Pages → Custom domain**, ajoute un enregistrement DNS CNAME vers `your-username.github.io` et place un fichier `CNAME` à la racine du repo contenant ton domaine.
-
-Bonne visite 🚀
+## Déploiement
+GitHub Pages :
+- Option A : Settings → Pages → Source = Deploy from a branch (main / root) + fichier `.nojekyll` à la racine.
+- Option B : Source = GitHub Actions + workflow `pages.yml` (voir nos messages précédents).
