@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <title>Musique — Ryan ATROUN</title>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,15 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
-  <meta name="description" content="Mixage, mastering et album distribué sur plateformes.">
+  <meta name="description" content="Production sur FL Studio, plugins de mixage/mastering et album sur Spotify.">
 </head>
 <body>
   <canvas id="stars" aria-hidden="true"></canvas>
   <div id="vignette" aria-hidden="true"></div>
+  
   <header>
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Accueil">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo" aria-hidden="true"><img src="assets/logo-frizz.svg" alt="Frizz logo"></div>
         <span>Ryan ATROUN</span>
       </a>
       <nav aria-label="Navigation principale">
@@ -29,38 +31,41 @@
       </nav>
     </div>
   </header>
+
   <main class="container">
     <section>
       <div class="section-title"><span class="dot"></span><h2>Musique</h2></div>
       <div class="grid">
         <article class="card reveal">
-          <h3>Mixage & Mastering</h3>
-          <p>Je produis, mixe et masterise mes titres. J'ai publié un <strong>album distribué sur les plateformes</strong> (Spotify, Apple Music...).</p>
-          <p style="margin-top:10px">Lien vers l'album : <a href="https://open.spotify.com/intl-fr/artist/0Ww6yl0w0xxIFEYSTCEPo0?si=LuAmE-KFTcqq74r5yiqXVA" target="_blank" rel="noopener">ajoute ton lien Spotify/Apple</a></p>
-        </article>
-        <article class="card reveal">
-          <h3>Techniques</h3>
-          <p>Égalisation, compression, spatialisation, gestion du loudness et mastering transparent. Outils : DAW (au choix), plugins d'analyse.</p>
-        </article>
-      
-        <article class="card reveal">
-          <h3>Setup · DAW & Plugins</h3>
-          <p>Je travaille sur <strong>FL Studio</strong> avec des plugins de mix/mastering (ex. FabFilter, iZotope, Waves...).</p>
-          <div class="plugin-grid">
-            <img src="assets/plugins/fl-studio.svg" alt="FL Studio" />
-            <img src="assets/plugins/fabfilter.svg" alt="FabFilter" />
-            <img src="assets/plugins/izotope.svg" alt="iZotope" />
-            <img src="assets/plugins/waves.svg" alt="Waves" />
+          <h3>Production — FL Studio</h3>
+          <p>Je produis, mixe et masterise mes titres sur <strong>FL Studio</strong>.</p>
+          <div class="gallery" style="margin-top:10px">
+            <img src="assets/fl-studio.png" alt="FL Studio">
           </div>
         </article>
-
+        <article class="card reveal">
+          <h3>Plugins</h3>
+          <p>FabFilter (Pro‑Q, Pro‑C, Pro‑R…), iZotope (Ozone, Neutron…), utilitaires d’analyse.</p>
+          <div class="gallery" style="margin-top:10px">
+            <img src="assets/plugin-1.png" alt="Fabfilter plugins">
+            <img src="assets/plugin-2.png" alt="iZotope plugins">
+            <img src="assets/plugin-3.png" alt="Plugins">
+          </div>
+        </article>
+        <article class="card reveal">
+          <h3>Écouter</h3>
+          <p>Mon album / titres sont disponibles sur les plateformes.</p>
+          <p><a href="https://open.spotify.com/intl-fr/artist/0Ww6yl0w0xxIFEYSTCEPo0?si=LuAmE-KFTcqq74r5yiqXVA" target="_blank" rel="noopener" class="primary-btn">Spotify</a></p>
+        </article>
       </div>
     </section>
   </main>
+  
   <footer class="container">
     © <span id="year"></span> — Ryan ATROUN. Tous droits réservés.
   </footer>
   <script src="js/main.js"></script>
   <script src="js/starfield.js"></script>
+
 </body>
 </html>

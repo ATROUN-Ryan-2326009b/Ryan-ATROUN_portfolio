@@ -1,25 +1,16 @@
-# Portfolio — Ryan ATROUN
-Site statique multi-pages (fond étoilé animé, cartes avec surbrillance/tilt, animations douces).
+# Portfolio — Ryan ATROUN (version mise à jour)
+- Logo FRIZZ rendu plus lisible, juste à côté du nom.
+- Accueil sans le carré interactif, avec contenu projets + lien GitHub.
+- Projets limités à ceux demandés (SQL, jeux C++, site HTML/CSS, Apache, bases BUT).
+- Page À propos : uniquement compétences techniques de 1ʳᵉ année de BUT.
+- Section CV : image + barre de progression (modifie `data-progress` et les éléments de `.timeline-items`).
+- Musique : images FL Studio / plugins + lien Spotify.
 
-## Structure
-- `index.html` — page d'accueil
-- `projects.html` — projets
-- `about.html` — à propos / compétences
-- `music.html` — musique (mixage/mastering + album)
-- `contact.html` — contact
-- `css/style.css` — styles
-- `js/main.js` — effets (tilt, reveal, année)
-- `js/starfield.js` — fond d'étoiles + étoiles filantes
-
-## Modifier le contenu
-Édite directement les pages `.html` :
-- Nom/accroche : `index.html` (section hero)
-- Projets : `projects.html` (duplique un `<article class="card">`)
-- Compétences & alternance : `about.html`
-- Lien de l'album : `music.html` (remplace `#` par ton URL Spotify/Apple)
-- Email & LinkedIn : `contact.html`
+## Modifier la chronologie
+Dans `about.html`, section `#cv` :
+- Change `data-progress` (0–100).
+- Édite les `<div class="timeline-item">` avec tes dates et intitulés exacts.
+Si tu fournis ton **CV en PDF**, je pourrai extraire les dates automatiquement.
 
 ## Déploiement
-GitHub Pages :
-- Option A : Settings → Pages → Source = Deploy from a branch (main / root) + fichier `.nojekyll` à la racine.
-- Option B : Source = GitHub Actions + workflow `pages.yml` (voir nos messages précédents).
+Ouvre `index.html` localement ou publie via GitHub Pages.

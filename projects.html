@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <title>Projets — Ryan ATROUN</title>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,15 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
-  <meta name="description" content="Projets en développement, réseaux et cybersécurité.">
+  <meta name="description" content="Projets: base de données, jeux C++, site HTML/CSS, serveur Apache, bases de BUT.">
 </head>
 <body>
   <canvas id="stars" aria-hidden="true"></canvas>
   <div id="vignette" aria-hidden="true"></div>
+  
   <header>
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Accueil">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo" aria-hidden="true"><img src="assets/logo-frizz.svg" alt="Frizz logo"></div>
         <span>Ryan ATROUN</span>
       </a>
       <nav aria-label="Navigation principale">
@@ -29,41 +31,46 @@
       </nav>
     </div>
   </header>
+
   <main class="container">
     <section id="projets">
       <div class="section-title"><span class="dot"></span><h2>Projets</h2></div>
       <div class="grid projects">
-        <article class="card tilt reveal">
-          <div class="picon" aria-hidden="true">🔧</div>
-          <h3>Scanner de ports minimal</h3>
-          <p>Outil d'exploration réseau (éducatif) pour comprendre TCP/UDP, timeouts, parallélisation.</p>
-          <div class="tech"><span class="chip">Python</span><span class="chip">Sockets</span><span class="chip">CLI</span></div>
+        <article class="card reveal">
+          <h3>Projet Base de Données</h3>
+          <p>Conception schéma relationnel, normalisation, requêtes SQL (jointures, agrégations), vues et droits.</p>
+          <div class="tech"><span class="chip">SQL</span><span class="chip">Merise</span></div>
         </article>
-        <article class="card tilt reveal">
-          <div class="picon" aria-hidden="true">🔧</div>
-          <h3>Dashboard Crypto</h3>
-          <p>Graphiques en temps réel + alertes seuil.</p>
-          <div class="tech"><span class="chip">JS</span><span class="chip">Chart.js</span><span class="chip">API</span></div>
+        <article class="card reveal">
+          <h3>Jeux C++</h3>
+          <p>Implémentation d'un <strong>Puissance 4</strong> et d'un mini <strong>Candy Crush</strong> (grille, collisions, scores, IA simple).</p>
+          <div class="tech"><span class="chip">C++</span><span class="chip">POO</span></div>
         </article>
-        <article class="card tilt reveal">
-          <div class="picon" aria-hidden="true">🔧</div>
-          <h3>Bot Discord</h3>
-          <p>Automatisation de la modération et rôles, commandes slash.</p>
-          <div class="tech"><span class="chip">Node.js</span><span class="chip">Discord.js</span></div>
+        <article class="card reveal">
+          <h3>Site HTML/CSS</h3>
+          <p>Site vitrine responsive (celui-ci) — grilles CSS, composants réutilisables et accessibilité.</p>
+          <div class="tech"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span></div>
+          <p><a href="https://github.com/ATROUN-Ryan-2326009b" target="_blank" rel="noopener">Code sur GitHub</a></p>
         </article>
-        <article class="card tilt reveal">
-          <div class="picon" aria-hidden="true">🔧</div>
-          <h3>Portfolio 3D</h3>
-          <p>Expériences WebGL légères et interactives.</p>
-          <div class="tech"><span class="chip">Canvas</span><span class="chip">WebGL</span></div>
+        <article class="card reveal">
+          <h3>Configuration Serveur Apache</h3>
+          <p>Hébergement d'un site statique, virtual hosts, logs et durcissement basique.</p>
+          <div class="tech"><span class="chip">Linux</span><span class="chip">Apache</span></div>
+        </article>
+        <article class="card reveal">
+          <h3>Bases 1ʳᵉ année de BUT</h3>
+          <p>Compétences étudiées : C++, SQL, HTML/CSS/JS, Linux, Réseaux, Git.</p>
+          <div class="tech"><span class="chip">BUT</span><span class="chip">Fondamentaux</span></div>
         </article>
       </div>
     </section>
   </main>
+  
   <footer class="container">
     © <span id="year"></span> — Ryan ATROUN. Tous droits réservés.
   </footer>
   <script src="js/main.js"></script>
   <script src="js/starfield.js"></script>
+
 </body>
 </html>

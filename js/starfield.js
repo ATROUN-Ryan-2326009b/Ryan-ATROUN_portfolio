@@ -1,3 +1,4 @@
+
 // Starfield background with occasional shooting stars
 const canvas = document.getElementById('stars')
 const ctx = canvas.getContext('2d', { alpha: true })

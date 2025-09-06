@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <title>Ryan ATROUN — Portfolio</title>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,15 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
-  <meta name="description" content="Étudiant informatique & réseaux, orienté cybersécurité. Projets, expériences et musique.">
+  <meta name="description" content="Étudiant informatique & réseaux (alternance Sestrea), orienté cybersécurité. Projets, compétences et musique.">
 </head>
 <body>
   <canvas id="stars" aria-hidden="true"></canvas>
   <div id="vignette" aria-hidden="true"></div>
+  
   <header>
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Accueil">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo" aria-hidden="true"><img src="assets/logo-frizz.svg" alt="Frizz logo"></div>
         <span>Ryan ATROUN</span>
       </a>
       <nav aria-label="Navigation principale">
@@ -29,6 +31,7 @@
       </nav>
     </div>
   </header>
+
   <main class="container">
     <section class="hero" id="top">
       <div>
@@ -40,13 +43,38 @@
           <a href="about.html" class="ghost-btn">Mon parcours</a>
         </div>
       </div>
-      
+      <div>
+        <div class="card" style="display:grid; gap:10px">
+          <div class="kicker">Projets en bref</div>
+          <p class="lead" style="font-size:.95rem">
+            • Jeux C++ (Puissance 4, mini <em>Candy Crush</em>)<br>
+            • Projet base de données (SQL)<br>
+            • Site web HTML/CSS (sur GitHub)<br>
+            • Config d'un serveur Apache<br>
+            • Bases de 1ʳᵉ année de BUT : C++, SQL, HTML/CSS/JS, Linux, Réseaux, Git
+          </p>
+          <a href="https://github.com/ATROUN-Ryan-2326009b" class="primary-btn" target="_blank" rel="noopener">Voir mon GitHub</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-title"><span class="dot"></span><h2>Musique (FL Studio)</h2></div>
+      <div class="gallery">
+        <img src="assets/fl-studio.png" alt="FL Studio">
+        <img src="assets/plugin-1.png" alt="Fabfilter plugins">
+        <img src="assets/plugin-2.png" alt="iZotope Ozone / Neutron">
+        <img src="assets/plugin-3.png" alt="Suite de plugins">
+      </div>
+      <p class="lead" style="margin-top:10px">Je compose et mixe sur <strong>FL Studio</strong> avec des plugins de mixage/mastering (FabFilter, iZotope…).
+      Mon Spotify : <a href="https://open.spotify.com/intl-fr/artist/0Ww6yl0w0xxIFEYSTCEPo0?si=LuAmE-KFTcqq74r5yiqXVA" target="_blank" rel="noopener">écouter</a>.</p>
     </section>
   </main>
+  
   <footer class="container">
     © <span id="year"></span> — Ryan ATROUN. Tous droits réservés.
   </footer>
   <script src="js/main.js"></script>
   <script src="js/starfield.js"></script>
+
 </body>
 </html>

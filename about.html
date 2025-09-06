@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <title>À propos — Ryan ATROUN</title>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,15 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
-  <meta name="description" content="Parcours, compétences et alternance chez Sestrea.">
+  <meta name="description" content="Parcours, compétences techniques de 1ʳᵉ année de BUT, alternance Sestrea, et CV.">
 </head>
 <body>
   <canvas id="stars" aria-hidden="true"></canvas>
   <div id="vignette" aria-hidden="true"></div>
+  
   <header>
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Accueil">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo" aria-hidden="true"><img src="assets/logo-frizz.svg" alt="Frizz logo"></div>
         <span>Ryan ATROUN</span>
       </a>
       <nav aria-label="Navigation principale">
@@ -29,65 +31,61 @@
       </nav>
     </div>
   </header>
+
   <main class="container">
     <section id="a-propos">
       <div class="section-title"><span class="dot"></span><h2>À propos</h2></div>
       <div class="about">
         <div class="card reveal">
-          <h3>Qui suis‑je ?</h3>
-          <p>Étudiant en <strong>informatique & réseaux</strong>, orienté <strong>cybersécurité</strong>. En alternance chez <strong>Sestrea</strong>, je consolide les fondamentaux réseau (adressage IP, routage, VLAN, services comme Apache) et je pratique l'automatisation et l'observabilité.</p>
-          <p>Objectif : développer une expertise sécurité (durcissement, détection, hygiène réseau) tout en gardant un profil polyvalent dev/réseau.</p>
+          <h3>Profil</h3>
+          <p>Étudiant en <strong>informatique & réseaux</strong>, orienté <strong>cybersécurité</strong>. En alternance chez <strong>Sestrea</strong>, je consolide les fondamentaux réseau (adressage IP, routage, VLAN, services Apache) et j'apprends l'automatisation et l'observabilité.</p>
+          <p>Objectif : développer une expertise sécurité (durcissement, détection, hygiène réseau) tout en gardant un profil polyvalent dev/réseau.</p>
         </div>
         <div class="card reveal">
-          <h3>Compétences</h3>
+          <h3>Compétences techniques — 1ʳᵉ année de BUT</h3>
           <div class="skills">
-            
-            <span class="skill">C++ (bases solides)</span>
-            <span class="skill">Java (initiation)</span>
-            <span class="skill">Python (initiation)</span>
-            <span class="skill">SQL (modélisation MCD/MLD + requêtes)</span>
-            <span class="skill">HTML/CSS/JavaScript (bases)</span>
-            <span class="skill">Linux (ligne de commande, scripts simples)</span>
-            <span class="skill">Systèmes & Réseaux (IP, sous-réseaux, VLAN, DHCP, DNS)</span>
-            <span class="skill">Architecture (binaire, mémoire, OS)</span>
-            <span class="skill">Git (workflow basique)</span>
-
+            <span class="skill">C++ (structures, POO)</span>
+            <span class="skill">Bases de données SQL</span>
+            <span class="skill">HTML/CSS/JavaScript</span>
+            <span class="skill">Linux (shell, permissions)</span>
+            <span class="skill">Réseaux (IP, VLAN, DHCP, DNS)</span>
+            <span class="skill">Serveur Apache</span>
+            <span class="skill">Git / GitHub</span>
+            <span class="skill">Algorithmique</span>
           </div>
-        </div>
-      </div>
-    
-    <section id="cv" class="timeline-section">
-      <div class="section-title"><span class="dot"></span><h2>Parcours (CV)</h2></div>
-      <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h4>Alternance — Sestrea</h4>
-            <p class="muted">2024–2025 · Informatique & Réseaux · Contribution à l’automatisation, supervision et bonnes pratiques sécurité.</p>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h4>Employé polyvalent — Spar Luynes (ex‑Casino Shop)</h4>
-            <p class="muted">Juillet–Août (job d’été) · Accueil, caisse, mise en rayon, polyvalence.</p>
-          </div>
-        </div>
-      </div>
-      <div class="cv-slot">
-        <div class="cv-photo" aria-label="Photo de CV"></div>
-        <div>
-          <p class="lead">Espace réservé pour ton <strong>CV</strong> (photo + PDF).</p>
-          <a class="primary-btn" href="#" onclick="alert('Ajoute ton fichier CV.pdf dans /assets et remplace ce # par son chemin.'); return false;">Ajouter mon CV</a>
+          <p class="lead" style="margin-top:10px">Cette section reprend uniquement les <strong>compétences</strong> de la 1ʳᵉ année, comme demandé.</p>
         </div>
       </div>
     </section>
 
+    <section id="cv">
+      <div class="section-title"><span class="dot"></span><h2>CV — Chronologie</h2></div>
+      <div class="card cv-card reveal">
+        <img src="assets/image_cv.png" alt="CV de Ryan Atroun">
+        <div>
+          <div class="timeline">
+            <div class="timeline-track">
+              <!-- Ajuste data-progress (0–100) pour marquer l'avancement de la chronologie -->
+              <div class="timeline-progress" data-progress="85"></div>
+            </div>
+            <div class="timeline-items">
+              <!-- ❗️Sans le PDF, j'ai placé des points clés génériques. Tu peux éditer les dates/textes facilement. -->
+              <div class="timeline-item"><b>2023–2024</b><br> BUT Info — 1ʳᵉ année</div>
+              <div class="timeline-item"><b>2024–2025</b><br> Alternance — Sestrea</div>
+              <div class="timeline-item"><b>Projets</b><br> Jeux C++, SQL, Web</div>
+            </div>
+          </div>
+          <p class="lead" style="margin-top:10px">Si tu me partages le <strong>PDF de ton CV</strong> ici, je remplirai chaque étape (dates, diplômes, expériences) automatiquement.</p>
+        </div>
+      </div>
+    </section>
   </main>
+  
   <footer class="container">
     © <span id="year"></span> — Ryan ATROUN. Tous droits réservés.
   </footer>
   <script src="js/main.js"></script>
   <script src="js/starfield.js"></script>
+
 </body>
 </html>
