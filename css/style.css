@@ -26,8 +26,6 @@ header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(140%) blur(1
 .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 6px}
 .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text)}
 .brand .logo{width:28px; aspect-ratio:1; border-radius:10px; background:linear-gradient(135deg,var(--primary),var(--accent)); box-shadow:var(--glow)}
-.brand .logo-img{height:28px; width:auto; display:block; filter:drop-shadow(0 0 6px rgba(124,248,255,.25))}
-@media (min-width:900px){ .brand .logo-img{height:32px} }
 .brand span{font-weight:700; letter-spacing:.4px}
 nav a{color:var(--muted); text-decoration:none; margin:0 12px; font-weight:500}
 nav a:hover{color:var(--text)}
@@ -75,8 +73,26 @@ footer{padding:32px 0; color:var(--muted); border-top:1px solid rgba(124,248,255
   *{animation:none!important; transition:none!important}
 }
 
-/* Brand with FRIZZ logo + name */
-.brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--text)}
-.brand .logo-img{height:28px; width:auto; display:block; filter: invert(1) brightness(1.6) drop-shadow(0 0 6px rgba(124,248,255,.25));}
-@media (min-width:900px){ .brand .logo-img{height:34px} }
-.brand .brand-name{font-weight:800; letter-spacing:.3px; color:#fff}
+
+/* === Timeline (CV) === */
+.timeline-section{padding-top:16px}
+.timeline{position:relative; margin:24px 0 8px; padding-left:12px}
+.timeline::before{content:""; position:absolute; left:16px; top:0; bottom:0; width:2px; background:linear-gradient(180deg, rgba(124,248,255,.6), rgba(159,124,255,.3))}
+.tl-item{position:relative; margin:16px 0 16px 12px; padding-left:24px}
+.tl-dot{position:absolute; left:6px; top:.55em; width:12px; height:12px; border-radius:999px; background:linear-gradient(135deg,var(--primary),var(--accent)); box-shadow:var(--glow)}
+.tl-content h4{margin:0 0 4px}
+.tl-content .muted{color:var(--muted); font-size:.95rem}
+
+/* CV slot */
+.cv-slot{display:grid; grid-template-columns:120px 1fr; gap:16px; align-items:center; margin-top:16px}
+.cv-photo{width:120px; height:120px; border-radius:16px; background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(124,248,255,.25)}
+
+/* Project icon */
+.picon{font-size:22px; line-height:1; margin-bottom:6px}
+
+/* Plugins grid */
+.plugin-grid{display:grid; grid-template-columns:repeat(4, minmax(70px,1fr)); gap:12px; align-items:center; justify-items:center; margin-top:12px}
+.plugin-grid img{width:100%; max-width:130px; border-radius:12px; border:1px solid rgba(124,248,255,.25); background:rgba(255,255,255,.03); padding:10px}
+
+/* Utility */
+.muted{color:var(--muted)}
