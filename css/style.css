@@ -17,7 +17,7 @@ header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(140%) blur(1
 }
 .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 6px}
 .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text); font-weight:700}
-.brand .logo{width:28px; aspect-ratio:1; display:grid; place-items:center}
+.brand .logo{width:40px; aspect-ratio:1; display:grid; place-items:center}
 .brand .logo img{width:100%; height:100%; filter:drop-shadow(0 0 6px rgba(124,248,255,.6))}
 nav a{color:var(--muted); text-decoration:none; margin:0 12px; font-weight:500}
 nav a:hover{color:var(--text)}
@@ -61,11 +61,11 @@ footer{padding:32px 0; color:var(--muted); border-top:1px solid rgba(124,248,255
 .timeline{margin-top:18px; position:relative; padding:18px 0 0}
 .timeline-track{height:8px; background:rgba(124,248,255,.18); border-radius:8px; overflow:hidden}
 .timeline-progress{height:100%; width:0%; background:linear-gradient(90deg,var(--primary),var(--accent)); box-shadow:var(--glow)}
-.timeline-items{display:grid; grid-template-columns:repeat(12,1fr); gap:8px; margin-top:14px}
+.timeline-items{display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:8px; margin-top:14px}
 .timeline-item{font-size:.9rem; color:var(--muted)}
 .timeline-item b{color:var(--text)}
 .cv-card{display:grid; grid-template-columns: 1fr 1fr; gap:18px; align-items:center}
-.cv-card img{width:100%; border-radius:12px; border:1px solid rgba(124,248,255,.2)}
+.cv-card img{width:80%; max-width:240px; justify-self:center; border-radius:12px; border:1px solid rgba(124,248,255,.2)}
 .gallery{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px}
 .gallery img{width:100%; border-radius:12px; border:1px solid rgba(124,248,255,.2); background:#0c1224}
 @media (max-width: 900px){
