@@ -1,0 +1,15 @@
+{
+  "name": "ryan-atroun_portfolio",
+  "version": "1.0.0",
+  "description": "Static portfolio website for Ryan ATROUN",
+  "main": "index.js",
+  "scripts": {
+    "lint": "echo 'No linting necessary'",
+    "build": "echo 'No build step'",
+    "test": "echo 'No tests'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
